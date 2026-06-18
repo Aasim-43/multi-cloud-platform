@@ -1,0 +1,7 @@
+cpu_usage,memory_usage,disk_usage,network_usage,failure
+80,70,60,90,1
+20,30,25,40,0
+90,85,80,95,1
+35,40,30,20,0
+75,70,65,80,1
+50,45,40,35,0

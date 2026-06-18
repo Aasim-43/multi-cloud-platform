@@ -2,36 +2,28 @@ from sqlalchemy import Column, Integer, String, Float
 from database import Base
 
 class User(Base):
-**tablename** = "users"
+    __tablename__ = "users"
 
-```
-id = Column(Integer, primary_key=True)
-username = Column(String(100))
-email = Column(String(200))
-```
+    id = Column(Integer, primary_key=True)
+    username = Column(String(100))
+    email = Column(String(200))
 
 class License(Base):
-**tablename** = "licenses"
+    __tablename__ = "licenses"
 
-```
-id = Column(Integer, primary_key=True)
-user_id = Column(Integer)
-license_type = Column(String(50))
-```
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer)
+    license_type = Column(String(50))
 
 class FraudLog(Base):
-**tablename** = "fraud_logs"
+    __tablename__ = "fraud_logs"
 
-```
-id = Column(Integer, primary_key=True)
-event = Column(String(500))
-```
+    id = Column(Integer, primary_key=True)
+    event = Column(String(500))
 
 class CostReport(Base):
-**tablename** = "cost_reports"
+    __tablename__ = "cost_reports"
 
-```
-id = Column(Integer, primary_key=True)
-provider = Column(String(50))
-cost = Column(Float)
-```
+    id = Column(Integer, primary_key=True)
+    provider = Column(String(50))
+    cost = Column(Float)
